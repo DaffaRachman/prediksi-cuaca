@@ -88,7 +88,7 @@ Tujuan dari proyek ini meliputi:
 | Tags | _Beginer, Data Visualization, Classification, Exploratory Analysis, Weather and Climate_ |
 | View | 60.8k |
 
-![image]([https://drive.google.com/file/d/194k79NXgYsJMJzXSG_gsVBcvvlyqEFDO/view?usp=sharing](https://drive.google.com/file/d/194k79NXgYsJMJzXSG_gsVBcvvlyqEFDO/view?usp=sharing))
+![image]((https://drive.google.com/file/d/194k79NXgYsJMJzXSG_gsVBcvvlyqEFDO/view?usp=sharing))
 
 Tabel 1. Informasi Dataset
 
