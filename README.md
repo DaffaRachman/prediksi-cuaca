@@ -112,7 +112,7 @@ Dilihat dari _Tabel 1. Informasi Dataset_ dataset ini berisi informasi sebagai b
 
 ### EDA - Univariate Analysis
 
-![image](https://drive.google.com/file/d/1q5IFf4GpNnNO5p4Zwz9eAZQmEGTPnIuV/view?usp=sharing)
+![image](https://drive.google.com/uc?export=view&id=1q5IFf4GpNnNO5p4Zwz9eAZQmEGTPnIuV)
 
 Gambar 1. Informasi Dataset
 
@@ -130,7 +130,7 @@ Tabel diatas merupakan informasi mengenai dataset yang sigunakan :
 
 
 
-![image](https://drive.google.com/file/d/1CxWG97oDFjZcUcNRshlHDWI_o3Aj8Mvk/view?usp=sharing)
+![image](https://drive.google.com/uc?export=view&id=1CxWG97oDFjZcUcNRshlHDWI_o3Aj8Mvk)
 Gambar 2. Pengecekan outlier pada dataset
 
 Gambar 2 merupakan visualisasi exploratory data analysis dari pengecekan outlier pada dataset yang digunakan pada project ini adalah weather type. Berdasarkan boxplot yang ditampilkan, berikut adalah fitur yang menunjukkan adanya outlier yang jelas pada dataset ini:
@@ -147,7 +147,7 @@ Gambar 2 merupakan visualisasi exploratory data analysis dari pengecekan outlier
 
 Outlier pada fitur seperti Temperature, Wind Speed, UV Index, dan Visibility perlu dianalisis lebih lanjut, karena mereka bisa merusak distribusi data dan memengaruhi model prediksi. Untuk itu, perlu menggunakan metode seperti IQR (Interquartile Range) untuk menangani outlier dan memastikan data yang digunakan untuk analisis lebih konsisten dan valid.
 
-![image](https://drive.google.com/file/d/1KCsnLArx2qHToI8hu1p2wCJn33zjV0Bk/view?usp=sharing)
+![image](https://drive.google.com/uc?export=view&id=1KCsnLArx2qHToI8hu1p2wCJn33zjV0Bk)
 Gambar 3. Persebaran data
 
 Gambar 3 merupakan visualisasi exploratory data analysis dari persebaran data pada dataset yang digunakan pada project ini adalah weather type. 
@@ -157,7 +157,7 @@ Distribusi variabel dalam dataset menunjukkan variasi yang baik dalam kebanyakan
 
 ### EDA - Multivariate Analysis
 
-![image](https://drive.google.com/file/d/1_HUt7t7YePVFgoHmOfMj5NdxXj-0MkSA/view?usp=sharingg)
+![image](https://drive.google.com/uc?export=view&id=1_HUt7t7YePVFgoHmOfMj5NdxXj-0MkSA)
 Gambar 4. Analisis Multivariate Matriks korelasi
 
 Pada Gambar 4 Analisis Multivariate, dengan menggunakan matriks korelasi. beriku adalah penjelasan dari matriks korelasi :
@@ -168,7 +168,7 @@ Pada Gambar 4 Analisis Multivariate, dengan menggunakan matriks korelasi. beriku
 
 ### EDA - Multivariate Analysis
 
-![image](https://drive.google.com/file/d/107slZeH32LtxsT4POH94-KKuRLJUouQm/view?usp=sharing)
+![image](https://drive.google.com/uc?export=view&id=107slZeH32LtxsT4POH94-KKuRLJUouQm)
 Gambar 5. Multivariate Analysis
 
 Pada Gambar 5 Multivariate analysis digunakan untuk melihat hubungan setiap kolom. berikut adalah penjelasannya :
