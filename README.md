@@ -122,7 +122,7 @@ Pada gambar tersebut, menjelaskan bahwa pada dataset ini tidak memiliki data yan
 
 -	Missing Value
   
-![image](https://drive.google.com/uc?export=view&id=1q5IFf4GpNnNO5p4Zwz9eAZQmEGTPnIuV).
+![Image](https://drive.google.com/uc?export=view&id=152QKt20ZaKsdozCLJiItJXnTh51qwuOG).
 
 Gambar 2. Missing Value
 
