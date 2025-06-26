@@ -118,7 +118,8 @@ Dilihat dari _Tabel 1. Informasi Dataset_ dataset ini berisi informasi sebagai b
 ### Pengecekan Data Duplikat dan Missing Value
 -	Data Duplikat
   
-![Image](https://drive.google.com/uc?export=view&id=152QKt20ZaKsdozCLJiItJXnTh51qwuOG).
+
+![Data Duplikat](https://github.com/user-attachments/assets/37a175dc-0bb1-4f2b-adc3-62633b70910b).
 
 Gambar 1. Data Duplikat.
 
@@ -126,7 +127,7 @@ Pada gambar tersebut, menjelaskan bahwa pada dataset ini tidak memiliki data yan
 
 -	Missing Value
   
-![Image](https://drive.google.com/uc?export=view&id=11RbJsZhwObx7_onuTD-nSclQ9cdzIM-L).
+![Missing Value](https://github.com/user-attachments/assets/d26dab42-0e22-46db-a4c1-12d9c9a29c09).
 
 Gambar 2. Missing Value
 
@@ -134,7 +135,7 @@ Pada gambar tersebut, menjelaskan bahwa pada dataset ini tidak memiliki Missing 
 
 ### Pengecekan Value Unik yang Ada Pada Dataset
 
-![Image](https://drive.google.com/uc?export=view&id=1n5kLnvWnPMj3P0lD-SuR72HPd_qDovKO)
+![Value Unik](https://github.com/user-attachments/assets/6d5c13c1-3b5f-46a3-a3da-b1d4bea41f92).
 
 Gambar 3. Value Unik
 
@@ -166,7 +167,7 @@ Nilai unik ini mencerminkan variasi atau kategori yang ada pada setiap fitur, ya
 
 ### EDA - Univariate Analysis
 
-![image](https://drive.google.com/uc?export=view&id=1q5IFf4GpNnNO5p4Zwz9eAZQmEGTPnIuV)
+![EDA -univariate](https://github.com/user-attachments/assets/a16f241c-5bf7-481e-981a-4a12de5b5b95)
 
 Gambar 4. Informasi Dataset
 
@@ -182,9 +183,8 @@ Tabel diatas merupakan informasi mengenai dataset yang sigunakan :
 - indeks UV, yang menunjukkan intensitas radiasi ultraviolet, memiliki rata-rata 4,01, dengan nilai minimum 0 dan maksimum 14. Nilai maksimum yang tinggi perlu diperiksa lebih lanjut, karena mungkin mencerminkan kejadian ekstrim atau kesalahan data. Median indeks UV adalah 3, yang menunjukkan kondisi UV pada kisaran sedang di sebagian besar data.
 - Kolom Visibility mencatatkan jarak pandang dalam kilometer, dengan nilai rata-rata 5,46 km. Nilai minimum adalah 0 km dan maksimum mencapai 20 km, menunjukkan rentang jarak pandang yang sangat bervariasi, dengan kemungkinan besar adanya outlier.
 
+![gambar outlier](https://github.com/user-attachments/assets/ac5c168c-5b54-49a4-9a76-818910235c61).
 
-
-![image](https://drive.google.com/uc?export=view&id=1CxWG97oDFjZcUcNRshlHDWI_o3Aj8Mvk)
 Gambar 5. Pengecekan outlier pada dataset
 
 Gambar 5 merupakan visualisasi exploratory data analysis dari pengecekan outlier pada dataset yang digunakan pada project ini adalah weather type. Berdasarkan boxplot yang ditampilkan, berikut adalah fitur yang menunjukkan adanya outlier yang jelas pada dataset ini:
@@ -201,7 +201,8 @@ Gambar 5 merupakan visualisasi exploratory data analysis dari pengecekan outlier
 
 Outlier pada fitur seperti Temperature, Wind Speed, UV Index, dan Visibility perlu dianalisis lebih lanjut, karena mereka bisa merusak distribusi data dan memengaruhi model prediksi. Untuk itu, perlu menggunakan metode seperti IQR (Interquartile Range) untuk menangani outlier dan memastikan data yang digunakan untuk analisis lebih konsisten dan valid.
 
-![image](https://drive.google.com/uc?export=view&id=1KCsnLArx2qHToI8hu1p2wCJn33zjV0Bk)
+![persebaran data](https://github.com/user-attachments/assets/4d527e17-515d-47d7-aa22-e8899fc6222e)
+
 Gambar 6. Persebaran data
 
 Gambar 6 merupakan visualisasi exploratory data analysis dari persebaran data pada dataset yang digunakan pada project ini adalah weather type. 
@@ -211,7 +212,8 @@ Distribusi variabel dalam dataset menunjukkan variasi yang baik dalam kebanyakan
 
 ### EDA - Multivariate Analysis
 
-![image](https://drive.google.com/uc?export=view&id=1_HUt7t7YePVFgoHmOfMj5NdxXj-0MkSA)
+![matriks korelasi](https://github.com/user-attachments/assets/ada04ab3-2ef3-4bf6-b706-0b1551337910)
+
 Gambar 7. Analisis Multivariate Matriks korelasi
 
 Pada Gambar 7 Analisis Multivariate, dengan menggunakan matriks korelasi. beriku adalah penjelasan dari matriks korelasi :
@@ -222,7 +224,8 @@ Pada Gambar 7 Analisis Multivariate, dengan menggunakan matriks korelasi. beriku
 
 ### EDA - Multivariate Analysis
 
-![image](https://drive.google.com/uc?export=view&id=107slZeH32LtxsT4POH94-KKuRLJUouQm)
+![multivariate](https://github.com/user-attachments/assets/d203fcc1-0eb0-4ce8-a5c6-dcc2e0e43857)
+
 Gambar 8. Multivariate Analysis
 
 Pada Gambar 8 Multivariate analysis digunakan untuk melihat hubungan setiap kolom. berikut adalah penjelasannya :
