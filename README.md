@@ -88,9 +88,11 @@ Tujuan dari proyek ini meliputi:
 | Tags | _Beginer, Data Visualization, Classification, Exploratory Analysis, Weather and Climate_ |
 | View | 60.8k |
 
-![image](https://drive.google.com/uc?export=view&id=194k79NXgYsJMJzXSG_gsVBcvvlyqEFDO)
 
 Tabel 1. Informasi Dataset
+
+#### Mengubah spasi menjadi underscore (_) dan menghapus kata unik untuk mempermudah analisa dan membangun model
+![image](https://drive.google.com/uc?export=view&id=194k79NXgYsJMJzXSG_gsVBcvvlyqEFDO)
 
 Dilihat dari _Tabel 1. Informasi Dataset_ dataset ini berisi informasi sebagai berikut ini : 
 - Dataset berupa CSV (Comma-Seperated Values).
@@ -110,13 +112,56 @@ Dilihat dari _Tabel 1. Informasi Dataset_ dataset ini berisi informasi sebagai b
 - Location (categorical): Tipe lokasi tempat data dicatat.
 - Weather Type (categorical): Variabel target untuk klasifikasi, yang menunjukkan tipe cuaca.
 
+### Pengecekan Data Duplikat dan Missing Value
+-	Data Duplikat
+![image](https://drive.google.com/file/d/11RbJsZhwObx7_onuTD-nSclQ9cdzIM-L/view?usp=sharing)
+Gambar 1. Data Duplikat
+
+Pada gambar tersebut, menjelaskan bahwa pada dataset ini tidak memiliki data yang terduplikat.
+
+-	Missing Value
+![image](https://drive.google.com/uc?export=view&id=1q5IFf4GpNnNO5p4Zwz9eAZQmEGTPnIuV)
+Gambar 2. Missing Value
+
+Pada gambar tersebut, menjelaskan bahwa pada dataset ini tidak memiliki Missing value.
+
+### Pengecekan Value Unik yang Ada Pada Dataset
+![image](https://drive.google.com/file/d/1n5kLnvWnPMj3P0lD-SuR72HPd_qDovKO/view?usp=sharing)
+Gambar 3. Value Unik
+
+Berdasarkan gambar tersebut, berikut adalah penjelasan singkat tentang nilai unik (unique values) untuk fitur-fitur dalam dataset tersebut:
+
+- Atmospheric Pressure (5456 unique values): Menunjukkan variasi nilai tekanan atmosfer, dengan 5456 nilai unik yang mencerminkan fluktuasi tekanan udara dalam dataset.
+
+- Temperature (126 unique values): Menampilkan variasi suhu yang tercatat, dengan 126 nilai unik yang menggambarkan rentang suhu yang cukup luas.
+
+- Precipitation (110 unique values): Mengindikasikan variasi curah hujan, dengan 110 nilai unik yang menunjukkan perubahan tingkat presipitasi sepanjang waktu.
+
+- Wind Speed (97 unique values): Menunjukkan kecepatan angin, dengan 97 nilai unik yang mencerminkan perbedaan dalam kecepatan angin yang tercatat.
+
+- Humidity (90 unique values): Menampilkan variasi kelembaban udara, dengan 90 nilai unik yang menunjukkan fluktuasi kelembaban di lokasi tertentu.
+
+- Visibility (41 unique values): Mengindikasikan jarak pandang yang tercatat, dengan 41 nilai unik yang menggambarkan berbagai kondisi visibilitas.
+
+- UV Index (15 unique values): Menunjukkan nilai indeks UV yang berkisar dari 1 hingga 15, yang mencerminkan tingkat paparan sinar ultraviolet.
+
+-- Cloud Cover (4 unique values): Mengindikasikan tingkat penutupan awan, dengan 4 nilai unik yang menggambarkan kategori ketebalan atau intensitas awan.
+
+- Season (4 unique values): Mengacu pada musim, dengan 4 nilai unik yang merepresentasikan musim-musim tertentu dalam set data.
+
+- Weather Type (4 unique values): Menyatakan jenis cuaca yang tercatat, dengan 4 nilai unik yang menggambarkan kondisi cuaca seperti cerah, hujan, berawan, dll.
+
+- Location (3 unique values): Mengindikasikan lokasi yang tercatat dalam dataset, dengan 3 nilai unik yang menunjukkan lokasi berbeda di mana data tersebut dikumpulkan.
+
+Nilai unik ini mencerminkan variasi atau kategori yang ada pada setiap fitur, yang membantu dalam memahami pola atau karakteristik data yang terkandung di dalamnya.
+
 ### EDA - Univariate Analysis
 
 ![image](https://drive.google.com/uc?export=view&id=1q5IFf4GpNnNO5p4Zwz9eAZQmEGTPnIuV)
 
-Gambar 1. Informasi Dataset
+Gambar 4. Informasi Dataset
 
-Gambar 1 merupakan informasi mengenai dataset yang digunakan :
+Gambar 4 merupakan informasi mengenai dataset yang digunakan :
 Tabel diatas merupakan informasi mengenai dataset yang sigunakan :
 - Kolom Temperature mencatat suhu dalam derajat Celsius. Rata-rata suhu adalah 19,13°C, dengan nilai minimum mencapai -25°C yang menunjukkan adanya suhu ekstrem yang mungkin disebabkan oleh kesalahan data atau kondisi yang sangat jarang. Nilai maksimum tercatat mencapai 109°C, yang merupakan nilai ekstrem dan perlu diperiksa lebih lanjut karena suhu tersebut sangat tinggi untuk kondisi normal. Median suhu berada pada angka 21°C, menunjukkan sebagian besar data berada pada kisaran suhu yang lebih normal.
 
@@ -131,9 +176,9 @@ Tabel diatas merupakan informasi mengenai dataset yang sigunakan :
 
 
 ![image](https://drive.google.com/uc?export=view&id=1CxWG97oDFjZcUcNRshlHDWI_o3Aj8Mvk)
-Gambar 2. Pengecekan outlier pada dataset
+Gambar 5. Pengecekan outlier pada dataset
 
-Gambar 2 merupakan visualisasi exploratory data analysis dari pengecekan outlier pada dataset yang digunakan pada project ini adalah weather type. Berdasarkan boxplot yang ditampilkan, berikut adalah fitur yang menunjukkan adanya outlier yang jelas pada dataset ini:
+Gambar 5 merupakan visualisasi exploratory data analysis dari pengecekan outlier pada dataset yang digunakan pada project ini adalah weather type. Berdasarkan boxplot yang ditampilkan, berikut adalah fitur yang menunjukkan adanya outlier yang jelas pada dataset ini:
 
 - Terlihat jelas adanya outlier pada Temperature yang sangat tinggi (di atas 60°C) dan sangat rendah (di bawah 0°C). Nilai-nilai ini tidak realistis dan harus diperiksa lebih lanjut.
 
@@ -148,9 +193,9 @@ Gambar 2 merupakan visualisasi exploratory data analysis dari pengecekan outlier
 Outlier pada fitur seperti Temperature, Wind Speed, UV Index, dan Visibility perlu dianalisis lebih lanjut, karena mereka bisa merusak distribusi data dan memengaruhi model prediksi. Untuk itu, perlu menggunakan metode seperti IQR (Interquartile Range) untuk menangani outlier dan memastikan data yang digunakan untuk analisis lebih konsisten dan valid.
 
 ![image](https://drive.google.com/uc?export=view&id=1KCsnLArx2qHToI8hu1p2wCJn33zjV0Bk)
-Gambar 3. Persebaran data
+Gambar 6. Persebaran data
 
-Gambar 3 merupakan visualisasi exploratory data analysis dari persebaran data pada dataset yang digunakan pada project ini adalah weather type. 
+Gambar 6 merupakan visualisasi exploratory data analysis dari persebaran data pada dataset yang digunakan pada project ini adalah weather type. 
 Berdasarkan visualisasi distribusi pada gambar, berikut adalah penjelasan untuk beberapa fitur yang ada dalam dataset :
 
 Distribusi variabel dalam dataset menunjukkan variasi yang baik dalam kebanyakan fitur, meskipun ada beberapa outlier yang perlu ditangani, seperti pada fitur Temperature, Wind Speed, Precipitation, dan UV Index. Selain itu, terdapat ketidakseimbangan pada fitur Season Count yang sangat didominasi oleh Winter, dan Cloud Cover yang lebih sering mencatatkan kondisi berawan. Metode SMOTE akan dilakukan untuk menangani value yang tidak seimbang.
@@ -158,9 +203,9 @@ Distribusi variabel dalam dataset menunjukkan variasi yang baik dalam kebanyakan
 ### EDA - Multivariate Analysis
 
 ![image](https://drive.google.com/uc?export=view&id=1_HUt7t7YePVFgoHmOfMj5NdxXj-0MkSA)
-Gambar 4. Analisis Multivariate Matriks korelasi
+Gambar 7. Analisis Multivariate Matriks korelasi
 
-Pada Gambar 4 Analisis Multivariate, dengan menggunakan matriks korelasi. beriku adalah penjelasan dari matriks korelasi :
+Pada Gambar 7 Analisis Multivariate, dengan menggunakan matriks korelasi. beriku adalah penjelasan dari matriks korelasi :
 - Humidity dan Precipitation memiliki korelasi positif yang kuat (0.64), yang menunjukkan bahwa semakin tinggi kelembaban, semakin tinggi pula kemungkinan curah hujan.
 - Wind Speed memiliki korelasi positif dengan Precipitation (0.44), yang mengindikasikan bahwa kecepatan angin mungkin sedikit berpengaruh terhadap curah hujan.
 - Temperature dan UV Index memiliki korelasi positif (0.37), yang menunjukkan bahwa suhu yang lebih tinggi cenderung terkait dengan peningkatan intensitas radiasi UV.
@@ -169,9 +214,9 @@ Pada Gambar 4 Analisis Multivariate, dengan menggunakan matriks korelasi. beriku
 ### EDA - Multivariate Analysis
 
 ![image](https://drive.google.com/uc?export=view&id=107slZeH32LtxsT4POH94-KKuRLJUouQm)
-Gambar 5. Multivariate Analysis
+Gambar 8. Multivariate Analysis
 
-Pada Gambar 5 Multivariate analysis digunakan untuk melihat hubungan setiap kolom. berikut adalah penjelasannya :
+Pada Gambar 8 Multivariate analysis digunakan untuk melihat hubungan setiap kolom. berikut adalah penjelasannya :
 - -Beberapa kolom seperti Wind Speed dan Precipitation menunjukkan distribusi yang sangat terpusat, sedangkan variabel lain memiliki distribusi yang lebih normal.
 
 - Beberapa variabel seperti Temperature dan Humidity atau Precipitation dan Wind Speed menunjukkan hubungan yang cukup kuat, yang dapat membantu dalam membangun model yang lebih efisien.
@@ -181,257 +226,126 @@ Dengan menggunakan Multivariate Analysis, dapat membantu mengevaluasi hubungan a
 ## Data Preparation
 Berikut merupakan data preparation yang diterapkan pada project ini :
 
-1. Data Gathering
-Pada tahap ini, data diimport agar dapat dibaca dan diproses dengan baik menggunakan dataframe dari library Pandas. Proses ini penting untuk memastikan data yang dikumpulkan dapat diolah secara efisien dan akurat.
-
-2. Pemeriksaan Missing Values
-Langkah awal adalah memastikan tidak ada data yang hilang (missing values) pada dataset. Pemeriksaan dilakukan untuk mengetahui apakah terdapat kolom atau baris dengan nilai kosong. Jika terdapat missing values, langkah penanganan seperti imputasi (mengisi nilai kosong dengan rata-rata) perlu diterapkan untuk menjaga integritas dataset. Dalam kasus ini, hasil pemeriksaan menunjukkan tidak ada data yang hilang, sehingga tidak diperlukan langkah penanganan lebih lanjut untuk missing values.
-
-3. Pemilahan Fitur (X) dan Label (Y)
-Dataset dipisahkan menjadi dua bagian utama:
-   - Fitur independen (X): Kolom yang digunakan untuk memprediksi hasil (dari kolom kedua hingga sebelum kolom terakhir).
-   - Target label (Y): Kolom terakhir, yang merupakan output yang ingin diprediksi oleh model. Langkah ini penting untuk memisahkan variabel yang digunakan dalam analisis dan variabel target yang akan diprediksi.
-
-4. Encoding Kategorikal
-Fitur kategorikal, yang berupa data non-numerik seperti nama atau kategori, diubah menjadi representasi numerik menggunakan One-Hot Encoding dan Label Encoding. Pada dataset ini, kolom tertentu yang memiliki nilai kategorikal diterjemahkan menjadi representasi biner. Hal ini dilakukan untuk memastikan algoritma machine learning dapat memproses data tersebut. One-Hot Encoding dan LabelEncoding diterapkan pada kolom yang merupakan kolom kategori.
-
-5. Pengecekan Dimensi Data
-Setelah proses encoding, dimensi data diperiksa untuk memastikan bahwa jumlah fitur dan label sudah sesuai dengan yang diharapkan. Hal ini memastikan data telah diproses dengan benar dan siap untuk digunakan dalam tahap berikutnya.
-
-6. Split Dataset
-Dataset dibagi menjadi dua subset:
-   - Data latih (training set): Digunakan untuk melatih model agar dapat mengenali pola dalam data.
-   - Data uji (test set): Digunakan untuk mengevaluasi performa model pada data baru yang belum pernah dilihat sebelumnya.
-Pembagian dilakukan dengan rasio 80:20, di mana 80% digunakan untuk pelatihan dan 20% untuk pengujian. Random state juga digunakan untuk memastikan hasil pembagian dataset konsisten di setiap eksekusi.
-
-7. Penanganan Ketidakseimbangan Data dengan SMOTE
-Ketidakseimbangan kelas sering menjadi masalah dalam dataset, terutama jika salah satu kelas target jauh lebih sedikit dibandingkan kelas lainnya. Dalam kasus ini, digunakan SMOTE (Synthetic Minority Over-sampling Technique) untuk menyeimbangkan data. Teknik ini menghasilkan sampel sintetik dari kelas minoritas dengan cara menginterpolasi antara contoh yang ada. Hasilnya adalah dataset yang lebih seimbang, memungkinkan model untuk mempelajari pola dari kedua kelas secara lebih efektif.
-
-8. Penggunaan Metode IQR untuk menangani data outlier
+1. Penggunaan Metode IQR untuk menangani data outlier
 Penggunaan metode Interquartile Range (IQR) adalah salah satu cara yang efektif untuk menangani data outlier dalam analisis statistik. IQR mengukur rentang antara kuartil pertama (Q1) dan kuartil ketiga (Q3) dalam sebuah dataset, yang mencakup 50% data tengah. Outlier dapat diidentifikasi dengan memeriksa nilai yang berada di luar rentang yang ditentukan oleh IQR.
+2. Encoding data
+Label Encoding dan One-Hot Encoding. Label Encoding diterapkan pada fitur season dan weather type, yang bersifat ordinal, untuk mewakili urutan kategori secara numerik (misalnya, musim dan jenis cuaca yang memiliki urutan tertentu). Sementara itu, One-Hot Encoding digunakan pada fitur cloud cover dan location, yang bersifat nominal, dengan mengubah setiap kategori menjadi kolom biner (0 atau 1), karena tidak ada hubungan urutan antar kategori.
+3. Split Dataset
+Pada tahapan ini membadi data menjadi x seagai fitur dan y seagai target. Pada projek ini menggunakan fitur weather_type sebagai target. Lalu, melakukan drop kolom pada fitur wether_type karena akan digunakan sebagai y atau target dan melakukan drop pada fitur Cloud_cover dan location karena kedua fitur tersebut sudah dilakukan encoding OnehotEncoding.
+4. Penanganan Ketidakseimbangan Data dengan SMOTE
+Ketidakseimbangan kelas sering menjadi masalah dalam dataset, terutama jika salah satu kelas target jauh lebih sedikit dibandingkan kelas lainnya. Dalam kasus ini, digunakan SMOTE (Synthetic Minority Over-sampling Technique) untuk menyeimbangkan data. Teknik ini menghasilkan sampel sintetik dari kelas minoritas dengan cara menginterpolasi antara contoh yang ada. Hasilnya adalah dataset yang lebih seimbang, memungkinkan model untuk mempelajari pola dari kedua kelas secara lebih efektif.
 
 ## Modeling
 Pada project ini menggunakan 8 algoritma machine learning yang diantaranya sebagai berikut :
 
-## 1. **Logistic Regression**
+## Model yang Digunakan
 
-**Logistic Regression** adalah metode statistik yang digunakan untuk klasifikasi biner dengan memodelkan probabilitas suatu kejadian. Model ini menghasilkan fungsi sigmoid untuk mengubah output regresi linier menjadi nilai antara 0 dan 1.
+### 1. **Logistic Regression**
 
-### Kelebihan
-- **Mudah Diinterpretasikan**  
-  Menyediakan probabilitas yang jelas untuk klasifikasi, memudahkan pemahaman hasil.
-- **Cepat dan Efisien**  
-  Proses pelatihan cepat, efektif untuk dataset kecil hingga menengah.
-- **Penerapan Luas**  
-  Sering digunakan di berbagai bidang seperti medis, pemasaran, dan ilmu sosial.
+**Logistic Regression** digunakan untuk memprediksi probabilitas kejadian tertentu (misalnya, apakah cuaca akan hujan atau tidak) berdasarkan variabel input seperti **temperature**, **humidity**, **wind speed**, dan lainnya.
 
-### Kekurangan
-- **Asumsi Linearitas**  
-  Kurang efektif untuk data dengan hubungan non-linear tanpa transformasi fitur.
-- **Sensitif Terhadap Outlier**  
-  Kinerja dapat terpengaruh oleh nilai pencilan dalam data.
+#### Cara Kerja pada Dataset Cuaca
+Logistic Regression memetakan data fitur yang ada ke dalam probabilitas terjadinya hujan atau tidak dengan fungsi sigmoid yang menghasilkan nilai antara 0 dan 1.
 
-### Parameter Utama
-- **`C`**  
-  Invers regularisasi (1/λ). Semakin kecil nilai `C`, semakin kuat regularisasi untuk menghindari overfitting.
-- **`penalty`**  
-  Jenis penalti pada koefisien model:  
-  - `l1`: Penalti Lasso  
-  - `l2`: Penalti Ridge  
-  - `elasticnet`: Kombinasi penalti L1 dan L2  
-  - `none`: Tanpa penalti.
-- **`solver`**  
-  Algoritma optimasi (misalnya, `liblinear` untuk dataset kecil).
-- **`random_state`**  
-  Untuk memastikan hasil dapat direplikasi.
+#### Parameter yang Digunakan
+- **`C=1.0`**: Mengatur kekuatan regularisasi untuk menghindari overfitting.
+- **`penalty='l2'`**: Menggunakan penalti L2 untuk regularisasi, yang membantu mencegah model overfit.
+- **`solver='liblinear'`**: Digunakan untuk dataset kecil hingga menengah, efektif dalam mengoptimalkan fungsi logistik.
 
 ---
 
-## 2. **K-Nearest Neighbors (KNN)**
+### 2. **K-Nearest Neighbors (KNN)**
 
-**KNN** adalah algoritma pembelajaran yang digunakan untuk klasifikasi dan regresi. Metode ini mencari `k` tetangga terdekat dan mengklasifikasikan data berdasarkan mayoritas kelas dari tetangga terdekat.
+**KNN** digunakan untuk mengklasifikasikan cuaca berdasarkan jarak terdekat dengan data historis cuaca lainnya. Dengan menghitung jarak antara data baru dan data historis, model menentukan kelas mayoritas dari `k` tetangga terdekat.
 
-### Kelebihan
-- **Mudah Dipahami dan Sederhana**  
-  Konsep dasar mudah dipahami dan diimplementasikan.
-- **Non-parametrik**  
-  Tidak memerlukan model pelatihan yang rumit.
+#### Cara Kerja pada Dataset Cuaca
+KNN menghitung jarak antar titik data dan mengklasifikasikan cuaca berdasarkan mayoritas kelas dari tetangga terdekat.
 
-### Kekurangan
-- **Lambat untuk Dataset Besar**  
-  Kinerja menurun saat menghitung jarak terhadap seluruh dataset.
-- **Sensitif terhadap Skala Fitur**  
-  Memerlukan normalisasi fitur agar hasil tidak terdistorsi.
-
-### Parameter Utama
-- **`n_neighbors`**  
-  Jumlah tetangga yang digunakan untuk klasifikasi.
-- **`metric`**  
-  Metode pengukuran jarak, seperti Euclidean atau Manhattan.
-- **`weights`**  
-  Menentukan apakah semua tetangga memiliki bobot sama atau berdasarkan jarak.
-- **`p`**  
-  Parameter untuk jarak Minkowski. `p=1` untuk Manhattan, `p=2` untuk Euclidean.
+#### Parameter yang Digunakan
+- **`n_neighbors=5`**: Jumlah tetangga terdekat yang digunakan untuk menentukan prediksi.
+- **`metric='euclidean'`**: Menggunakan jarak Euclidean untuk mengukur kedekatan antar data.
+- **`weights='uniform'`**: Memberikan bobot yang sama untuk semua tetangga terdekat.
 
 ---
 
-## 3. **Support Vector Machine (SVM)**
+### 3. **Support Vector Machine (SVM)**
 
-**SVM** adalah algoritma klasifikasi yang mencari hyperplane optimal untuk memisahkan data dari dua kelas. Dengan kernel, SVM juga dapat menangani data non-linier.
+**SVM** digunakan untuk memisahkan data cuaca menjadi dua kelas (misalnya, hujan dan tidak hujan) dengan mencari hyperplane yang memisahkan kedua kelas tersebut.
 
-### Kelebihan
-- **Efektif pada Dimensi Tinggi**  
-  Sangat baik untuk ruang fitur yang memiliki dimensi tinggi.
-- **Tahan Terhadap Overfitting**  
-  Cenderung menghasilkan model yang mampu melakukan generalisasi dengan baik.
+#### Cara Kerja pada Dataset Cuaca
+SVM mencari hyperplane yang memaksimalkan margin antara dua kelas (hujan dan tidak hujan). Dengan menggunakan kernel, SVM dapat menangani data non-linier.
 
-### Kekurangan
-- **Lambat pada Dataset Besar**  
-  Waktu pelatihan lebih lama karena kompleksitas perhitungan.
-- **Memerlukan Penyesuaian Parameter yang Teliti**  
-  Butuh pemilihan parameter `C` dan `gamma` yang hati-hati.
-
-### Parameter Utama
-- **`C`**  
-  Mengontrol seberapa banyak kesalahan yang diizinkan.
-- **`kernel`**  
-  Jenis kernel yang digunakan, seperti `linear`, `rbf`, atau `poly`.
-- **`gamma`**  
-  Besarnya pengaruh data individu pada keputusan klasifikasi.
-- **`degree`**  
-  Tingkat polinomial untuk kernel polynomial.
-- **`random_state`**  
-  Untuk hasil yang konsisten.
+#### Parameter yang Digunakan
+- **`C=1.0`**: Mengontrol penalti kesalahan pada data pelatihan.
+- **`kernel='rbf'`**: Menggunakan kernel Radial Basis Function (RBF) untuk menangani data non-linier.
+- **`gamma='scale'`**: Mengatur gamma untuk kernel, mempengaruhi bentuk fungsi keputusan.
 
 ---
 
-## 4. **Naive Bayes (Bernoulli)**
+### 4. **Naive Bayes (Bernoulli)**
 
-**Naive Bayes (Bernoulli)** adalah algoritma klasifikasi probabilistik yang digunakan untuk dataset biner, mengasumsikan bahwa fitur dalam dataset mengikuti distribusi Bernoulli.
+**Naive Bayes (Bernoulli)** digunakan untuk memprediksi cuaca berdasarkan fitur biner, seperti apakah suhu lebih tinggi dari 25°C atau tidak, dan apakah kelembaban lebih dari 80% atau tidak.
 
-### Kelebihan
-- **Cepat dan Efisien**  
-  Proses pelatihan dan prediksi sangat cepat.
-- **Cocok untuk Data Biner**  
-  Ideal untuk teks atau data biner.
+#### Cara Kerja pada Dataset Cuaca
+Model ini mengasumsikan bahwa fitur-fitur yang ada saling independen dan mengikuti distribusi Bernoulli.
 
-### Kekurangan
-- **Asumsi Independensi Fitur**  
-  Asumsi ini jarang terpenuhi dalam kenyataan, yang dapat menurunkan akurasi.
-- **Tidak Cocok untuk Data Kontinu**  
-  Kinerja menurun bila diterapkan pada dataset kontinu.
-
-### Parameter Utama
-- **`alpha`**  
-  Parameter smoothing Laplace untuk menghindari probabilitas nol.
-- **`binarize`**  
-  Ambang batas untuk binarisasi data input.
+#### Parameter yang Digunakan
+- **`alpha=1.0`**: Smoothing Laplace untuk menghindari probabilitas nol pada fitur yang tidak ada dalam data pelatihan.
+- **`binarize=0.0`**: Batas binarisasi untuk fitur input.
 
 ---
 
-## 5. **Naive Bayes (Gaussian)**
+### 5. **Naive Bayes (Gaussian)**
 
-**Naive Bayes (Gaussian)** adalah varian dari Naive Bayes yang digunakan untuk data kontinu, dengan asumsi bahwa fitur mengikuti distribusi Gaussian.
+**Naive Bayes (Gaussian)** digunakan untuk memprediksi cuaca dengan mengasumsikan bahwa fitur-fitur numerik (seperti suhu dan kelembaban) mengikuti distribusi Gaussian.
 
-### Kelebihan
-- **Efisien untuk Data Kontinu**  
-  Sangat cocok untuk data numerik.
-- **Tidak Memerlukan Tuning Parameter yang Rumit**  
-  Hanya membutuhkan estimasi rata-rata dan varians.
+#### Cara Kerja pada Dataset Cuaca
+Model ini menghitung probabilitas setiap kelas berdasarkan asumsi distribusi normal dari setiap fitur cuaca.
 
-### Kekurangan
-- **Sensitif terhadap Deviations dari Asumsi Gaussian**  
-  Kinerja bisa menurun jika data tidak mengikuti distribusi normal.
-- **Asumsi Independensi Fitur**  
-  Sama seperti Bernoulli.
-
-### Parameter Utama
-- **`var_smoothing`**  
-  Menambahkan nilai kecil pada varians untuk menghindari pembagian nol.
+#### Parameter yang Digunakan
+- **`var_smoothing=1e-9`**: Menambahkan nilai kecil untuk menghindari pembagian dengan nol dalam perhitungan varians.
 
 ---
 
-## 6. **Decision Tree**
+### 6. **Decision Tree**
 
-**Decision Tree** adalah algoritma yang membagi dataset berdasarkan fitur-fitur yang paling mempengaruhi keputusan, menggunakan struktur pohon untuk klasifikasi.
+**Decision Tree** digunakan untuk membagi dataset berdasarkan fitur-fitur cuaca yang paling mempengaruhi prediksi, seperti suhu, kelembaban, dan kecepatan angin.
 
-### Kelebihan
-- **Mudah Diinterpretasikan**  
-  Visualisasi pohon memudahkan pemahaman proses keputusan.
-- **Tidak Memerlukan Normalisasi Fitur**  
-  Dapat menangani fitur numerik dan kategorikal.
+#### Cara Kerja pada Dataset Cuaca
+Model ini membuat keputusan bertingkat berdasarkan nilai fitur untuk memprediksi kelas. Setiap node dalam pohon memisahkan data berdasarkan fitur yang paling informatif.
 
-### Kekurangan
-- **Rentan terhadap Overfitting**  
-  Biasanya memerlukan pemangkasan atau teknik regulasi.
-- **Sensitif terhadap Perubahan Data**  
-  Perubahan kecil dalam data bisa mengubah pohon secara signifikan.
-
-### Parameter Utama
-- **`max_depth`**  
-  Kedalaman maksimum pohon.
-- **`min_samples_split`**  
-  Minimum sampel yang dibutuhkan untuk membagi node.
-- **`criterion`**  
-  Ukuran kualitas pemisahan (Gini impurity atau entropy).
-- **`splitter`**  
-  Metode pemilihan split (`best` atau `random`).
+#### Parameter yang Digunakan
+- **`max_depth=5`**: Membatasi kedalaman pohon untuk mencegah overfitting.
+- **`min_samples_split=10`**: Minimum jumlah sampel yang diperlukan untuk membagi sebuah node.
+- **`criterion='gini'`**: Menggunakan Gini impurity sebagai kriteria untuk pemisahan.
 
 ---
 
-## 7. **Random Forest**
+### 7. **Random Forest**
 
-**Random Forest** adalah metode ensemble yang menggunakan banyak decision tree untuk meningkatkan akurasi dan mengurangi overfitting.
+**Random Forest** adalah metode ensemble yang menggunakan banyak decision tree untuk meningkatkan akurasi prediksi cuaca dan mengurangi risiko overfitting.
 
-### Kelebihan
-- **Tahan terhadap Overfitting**  
-  Lebih stabil dibandingkan decision tree tunggal.
-- **Efektif untuk Dataset Besar**  
-  Bekerja dengan baik pada dataset besar.
+#### Cara Kerja pada Dataset Cuaca
+Dengan membangun banyak decision tree dan menggabungkan hasilnya, Random Forest memberikan prediksi yang lebih stabil dan robust terhadap fluktuasi dalam data cuaca.
 
-### Kekurangan
-- **Kurang Interpretable**  
-  Kompleksitas tinggi dibandingkan decision tree tunggal.
-- **Lambat pada Dataset Besar**  
-  Waktu pelatihan lebih lama dibandingkan dengan algoritma lainnya.
-
-### Parameter Utama
-- **`n_estimators`**  
-  Jumlah pohon dalam ensemble.
-- **`criterion`**  
-  Fungsi split (Gini atau entropy).
-- **`max_depth`**  
-  Kedalaman maksimum pohon.
-- **`min_samples_split`**  
-  Sama seperti Decision Tree.
+#### Parameter yang Digunakan
+- **`n_estimators=100`**: Jumlah pohon dalam ensemble.
+- **`max_depth=5`**: Menentukan kedalaman maksimum pohon untuk menghindari overfitting.
 
 ---
 
-## 8. **XGBoost**
+### 8. **XGBoost**
 
-**XGBoost** adalah algoritma boosting yang mengoptimalkan gradient boosting dengan pendekatan yang efisien.
+**XGBoost** adalah algoritma boosting yang digunakan untuk mengoptimalkan prediksi cuaca dengan meminimalkan kesalahan secara iteratif.
 
-### Kelebihan
-- **Cepat dan Efisien**  
-  Mendukung optimisasi paralel dan memiliki performa tinggi.
-- **Menangani Nilai Hilang dengan Baik**  
-  Menangani nilai yang hilang secara otomatis.
+#### Cara Kerja pada Dataset Cuaca
+XGBoost membangun model secara bertahap dengan mengurangi kesalahan prediksi di setiap iterasi. Model ini efektif dalam menangani dataset besar dan menangani nilai yang hilang dengan baik.
 
-### Kekurangan
-- **Memerlukan Tuning Parameter yang Cermat**  
-  Butuh pemilihan parameter yang hati-hati untuk hasil optimal.
-- **Risiko Overfitting**  
-  Rentan terhadap overfitting pada dataset yang besar jika tidak ditangani dengan baik.
+#### Parameter yang Digunakan
+- **`learning_rate=0.1`**: Menentukan ukuran langkah pembelajaran.
+- **`max_depth=6`**: Kedalaman maksimum pohon dalam setiap iterasi boosting.
 
-### Parameter Utama
-- **`learning_rate`**  
-  Ukuran langkah pembelajaran.
-- **`max_depth`**  
-  Kedalaman maksimum pohon.
-- **`n_estimators`**  
-  Jumlah iterasi boosting.
-
-##Evaluation
+## Evaluation
 Menggunakan matriks evaluasi Accuracy	K-Fold Mean Accuracy	Std. Deviation	Precision	Recall	F1
 
 Tabel 2. Evaluasi
@@ -476,7 +390,7 @@ Tujuan dari proyek ini berhasil dicapai.
 - **Perbandingan Performansi Algoritma**  
   Evaluasi menyeluruh terhadap berbagai algoritma memberikan pemahaman yang jelas tentang kekuatan dan kelemahan masing-masing metode.
 
-## 3. Dampak Solusi Statement
+## 3. Solusi Statement
 Solusi yang dirancang berdampak signifikan terhadap hasil proyek.
 
 - **Analisis Data dan Preprocessing**  
@@ -487,7 +401,8 @@ Solusi yang dirancang berdampak signifikan terhadap hasil proyek.
   Model ensemble seperti XGBoost dan Random Forest memberikan hasil terbaik.
 
 - **Penanganan Outlier dan Ketidakseimbangan Data**  
-  Teknik SMOTE dan IQR memastikan bahwa model tidak mempunyai data outlier dan dapat menangani ketidak seimbangan dalam data, untuk meningkatkan akurasi dalam prediksi.
+  Teknik SMOTE dan IQR memastikan bahwa model tidak mempunyai data outlier dan dapat menangani ketidak seimbangan dalam data, meningkatkan akurasi dalam prediksi.
+
 
 ## Daftar Pustaka
 
