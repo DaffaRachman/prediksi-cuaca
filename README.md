@@ -486,9 +486,8 @@ Solusi yang dirancang berdampak signifikan terhadap hasil proyek.
   Penggunaan berbagai model memberikan wawasan luas tentang pola prediksi cuaca dalam data.  
   Model ensemble seperti XGBoost dan Random Forest memberikan hasil terbaik.
 
-- **Penanganan Ketidakseimbangan Data**  
-  Teknik SMOTE memastikan bahwa model dapat menangani ketidak seimbangan dalam data, meningkatkan keadilan dalam prediksi.
-
+- **Penanganan Outlier dan Ketidakseimbangan Data**  
+  Teknik SMOTE dan IQR memastikan bahwa model tidak mempunyai data outlier dan dapat menangani ketidak seimbangan dalam data, untuk meningkatkan akurasi dalam prediksi.
 
 ## Daftar Pustaka
 
