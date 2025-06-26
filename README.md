@@ -92,7 +92,10 @@ Tujuan dari proyek ini meliputi:
 Tabel 1. Informasi Dataset
 
 #### Mengubah spasi menjadi underscore (_) dan menghapus kata unik untuk mempermudah analisa dan membangun model
-![image](https://drive.google.com/uc?export=view&id=194k79NXgYsJMJzXSG_gsVBcvvlyqEFDO)
+
+![data info](https://github.com/user-attachments/assets/f8d6a72f-61a5-4980-b65a-e15cb18e7672)
+
+
 
 Dilihat dari _Tabel 1. Informasi Dataset_ dataset ini berisi informasi sebagai berikut ini : 
 - Dataset berupa CSV (Comma-Seperated Values).
