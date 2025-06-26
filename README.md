@@ -206,8 +206,9 @@ Pembagian dilakukan dengan rasio 80:20, di mana 80% digunakan untuk pelatihan da
 
 7. Penanganan Ketidakseimbangan Data dengan SMOTE
 Ketidakseimbangan kelas sering menjadi masalah dalam dataset, terutama jika salah satu kelas target jauh lebih sedikit dibandingkan kelas lainnya. Dalam kasus ini, digunakan SMOTE (Synthetic Minority Over-sampling Technique) untuk menyeimbangkan data. Teknik ini menghasilkan sampel sintetik dari kelas minoritas dengan cara menginterpolasi antara contoh yang ada. Hasilnya adalah dataset yang lebih seimbang, memungkinkan model untuk mempelajari pola dari kedua kelas secara lebih efektif.
-   - Sebelum penerapan SMOTE, ditampilkan jumlah data pada masing-masing kelas.
-   - Setelah SMOTE, dataset di-resample sehingga jumlah data untuk setiap kelas menjadi seimbang.
+
+8. Penggunaan Metode IQR untuk menangani data outlier
+Penggunaan metode Interquartile Range (IQR) adalah salah satu cara yang efektif untuk menangani data outlier dalam analisis statistik. IQR mengukur rentang antara kuartil pertama (Q1) dan kuartil ketiga (Q3) dalam sebuah dataset, yang mencakup 50% data tengah. Outlier dapat diidentifikasi dengan memeriksa nilai yang berada di luar rentang yang ditentukan oleh IQR.
 
 ## Modeling
 Pada project ini menggunakan 8 algoritma machine learning yang diantaranya sebagai berikut :
