@@ -114,12 +114,14 @@ Dilihat dari _Tabel 1. Informasi Dataset_ dataset ini berisi informasi sebagai b
 
 ### Pengecekan Data Duplikat dan Missing Value
 -	Data Duplikat
+  
 ![Image](https://drive.google.com/uc?export=view&id=11RbJsZhwObx7_onuTD-nSclQ9cdzIM-L).
 
 Gambar 1. Data Duplikat
 Pada gambar tersebut, menjelaskan bahwa pada dataset ini tidak memiliki data yang terduplikat.
 
 -	Missing Value
+  
 ![image](https://drive.google.com/uc?export=view&id=1q5IFf4GpNnNO5p4Zwz9eAZQmEGTPnIuV).
 
 Gambar 2. Missing Value
@@ -127,7 +129,9 @@ Gambar 2. Missing Value
 Pada gambar tersebut, menjelaskan bahwa pada dataset ini tidak memiliki Missing value.
 
 ### Pengecekan Value Unik yang Ada Pada Dataset
-![image](https://drive.google.com/file/d/1n5kLnvWnPMj3P0lD-SuR72HPd_qDovKO/view?usp=sharing).
+
+![Image](https://drive.google.com/uc?export=view&id=1n5kLnvWnPMj3P0lD-SuR72HPd_qDovKO)
+
 Gambar 3. Value Unik
 
 Berdasarkan gambar tersebut, berikut adalah penjelasan singkat tentang nilai unik (unique values) untuk fitur-fitur dalam dataset tersebut:
