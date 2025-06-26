@@ -117,7 +117,8 @@ Dilihat dari _Tabel 1. Informasi Dataset_ dataset ini berisi informasi sebagai b
   
 ![Image](https://drive.google.com/uc?export=view&id=152QKt20ZaKsdozCLJiItJXnTh51qwuOG).
 
-Gambar 1. Data Duplikat
+Gambar 1. Data Duplikat.
+
 Pada gambar tersebut, menjelaskan bahwa pada dataset ini tidak memiliki data yang terduplikat.
 
 -	Missing Value
