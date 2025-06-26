@@ -47,12 +47,12 @@ Bagi pilot dan pengendali lalu lintas udara, keberadaan model ini akan berharga 
 
 ### Problem Statements
 Berdasarkan latar belakang tersebut, masalah yang dapat diselesaikan dalam proyek ini adalah:
-- Bagaimana membangun model machine learning dan deep learning yang efektif untuk memprediksi risiko cuaca buruk yang dapat mempengaruhi keselamatan penerbangan, dengan tingkat akurasi yang tinggi?
+- Bagaimana membangun model machine learning yang efektif untuk memprediksi risiko cuaca buruk yang dapat mempengaruhi keselamatan penerbangan, dengan tingkat akurasi yang tinggi?
 - AAlgoritma apa yang memberikan performa terbaik untuk prediksi cuaca berisiko di antara model pembelajaran mesin dan pembelajaran mendalam yang digunakan?
 
 ### Goals
 Tujuan dari proyek ini meliputi:
-- Membangun model prediksi risiko cuaca berbasis machine learning dan deep learning dengan tingkat akurasi tinggi untuk mendukung keselamatan penerbangan.
+- Membangun model prediksi risiko cuaca berbasis machine learning dengan tingkat akurasi tinggi untuk mendukung keselamatan penerbangan.
 - Membandingkan performa berbagai algoritma untuk menentukan model terbaik dalam mendeteksi dan mengantisipasi risiko cuaca pada penerbangan.
 
 
@@ -459,7 +459,7 @@ Secara keseluruhan, XGBoost dan Random Forest tetap menjadi pilihan terbaik berd
 ## 1. Menjawab Problem Statements
 Model yang dievaluasi telah berhasil menjawab sebagian besar problem statements.
 
-- **Efektivitas Model Machine Learning dan Deep Learning**  
+- **Efektivitas Model Machine Learning**  
   Model XGBoost dan Random Forest menunjukkan performa terbaik dengan akurasi tinggi 92.31%.  
   Ini menunjukkan bahwa algoritma ensemble sangat efektif dalam memprediksi cuaca berdasarkan data historis.
 
