@@ -114,9 +114,9 @@ Dilihat dari _Tabel 1. Informasi Dataset_ dataset ini berisi informasi sebagai b
 
 ### Pengecekan Data Duplikat dan Missing Value
 -	Data Duplikat
-![image](https://drive.google.com/file/d/11RbJsZhwObx7_onuTD-nSclQ9cdzIM-L/view?usp=sharing)
-Gambar 1. Data Duplikat
+![Image](https://drive.google.com/uc?export=view&id=11RbJsZhwObx7_onuTD-nSclQ9cdzIM-L)
 
+Gambar 1. Data Duplikat
 Pada gambar tersebut, menjelaskan bahwa pada dataset ini tidak memiliki data yang terduplikat.
 
 -	Missing Value
